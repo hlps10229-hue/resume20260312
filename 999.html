@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>個人履歷 - AU114024097</title>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background:#f5f7fb;
+}
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+    border-left:5px solid #3498db;
+    padding-left:10px;
+}
+
+button{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:10px 16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2980b9;
+}
+
+.skill-bar{
+    background:#ddd;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.skill-level{
+    height:10px;
+    background:#3498db;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#777;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>個人履歷</h1>
+    <p>亞洲大學學生 | 學號 AU114024097</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>基本資料</h2>
+<p><b>姓名：</b>你的名字</p>
+<p><b>學校：</b>亞洲大學</p>
+<p><b>學號：</b>AU114024097</p>
+<p><b>Email：</b>your@email.com</p>
+<p><b>興趣：</b>設計 / 程式 / 攝影</p>
+</div>
+
+<div class="card">
+<h2>自我介紹</h2>
+<p>
+我是亞洲大學的學生，對設計與科技充滿興趣，
+希望透過學習程式與創意設計，提升自己的能力，
+未來能夠參與更多創新專案。
+</p>
+</div>
+
+<div class="card">
+<h2>技能</h2>
+
+<p>HTML</p>
+<div class="skill-bar">
+<div class="skill-level" style="width:80%"></div>
+</div>
+
+<p>CSS</p>
+<div class="skill-bar">
+<div class="skill-level" style="width:70%"></div>
+</div>
+
+<p>JavaScript</p>
+<div class="skill-bar">
+<div class="skill-level" style="width:60%"></div>
+</div>
+
+</div>
+
+<div class="card">
+<h2>作品 / 經歷</h2>
+<ul>
+<li>網頁設計練習網站</li>
+<li>設計海報作品</li>
+<li>課堂專案</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>聯絡我</h2>
+<button onclick="showMessage()">點擊聯絡</button>
+<p id="msg"></p>
+</div>
+
+</div>
+
+<footer>
+© 2026 AU114024097 Resume
+</footer>
+
+<script>
+function showMessage(){
+    document.getElementById("msg").innerHTML =
+    "謝謝你的查看！你可以透過 Email 聯絡我。";
+}
+</script>
+
+</body>
+</html>
